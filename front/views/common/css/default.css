@@ -1,0 +1,86 @@
+
+#container {
+  display: flex;
+  width: 64rem;
+  height: 48rem;
+  /* width, heigth 창 크기 우선 고정값으로 줌..  */
+  margin-left: 0.5em;
+  /* background-image:url('C:/Project/electron-vue/src/assets/image/로그인배경.png'); */
+  background-color: #fffbe5; 
+  /* contain = 가로 세로 비율 유지 사이즈 조절 가능, 이미지와 컨테이너 간 비율이 안맞으면 자리가 남게 됨 
+  cover = 컨테이너 완전히 채움 
+  noen = 아무것도 하지 않고 본래 이미지 사이즈 유지 -> 가운데 보여지도록 하는 센스 존재 
+  scale-down = none 또는 contatin 중에 더 적절한 방향으로 이미지 사이즈 조절  */
+  background-repeat: no-repeat;
+  /* justify-content: space-around; */
+}
+
+#container .front_logo{
+  width: 100vw;
+  height: auto;
+  /* background = 이미지관련 설정 */
+  background-image: url('../../../assets/image/logo2ver2.png');
+  background-repeat: no-repeat;
+  background-size: 25rem; height: auto;
+  background-position:relative;
+  margin-top: 16rem;
+  margin-left: 3rem;
+  margin-right: 1rem;
+
+}
+
+/* #container .front_logo{
+  font-size: 0px
+} */
+
+#container .front_logo:after{
+  /* 구글 폰트 적용 : publci 폴더 내에 링크 추가 해야 함 
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,900&display=swap" rel="stylesheet">   */
+  content:"Input keywords Make easy work Save your time";
+  font-family:'Kanit', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  color:black;
+  text-align: center;
+  position: relative;
+  top: 9.5rem;
+  left: 2.8rem;
+}
+
+
+#Form {
+  z-index: 50;
+  background-color:  #A50034;
+  width: 125vw;
+  height: 45rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  border-radius: 25% 0 0 25%;
+}
+
+.main-header {
+  text-align: center;
+  position: relative;
+  right: 8vw
+}
+
+/* .text-input {
+  width: 18.75rem;
+  height: 2.5rem;
+} */
+/* 
+​ .select-grade {
+  width: 9.25rem;
+} */
+
+/* ​ #LoginBtn {
+  width: 10vw;
+  height: 10vh;
+  border: 10px solid darkgray;
+} */
+
+/* .absolute {
+  width: 30vw;
+  height: 50vh;
+} */
